@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 1.25rem;
+}
+
+header {
+    background-color: #c62828;
+    color: white;
+    padding: 1.875rem 1.25rem;
+    text-align: center;
+    margin-bottom: 1.875rem;
+    border-bottom: 0.1875rem solid #b71c1c;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.625rem;
+}
+
+.subtitle {
+    font-size: 1.8em;
+    color: #ffcdd2;
+}
+
+section {
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
+    border-left: 0.25rem solid #d32f2f;
+}
+
+section h2 {
+    font-size: 2.8em;
+    margin-bottom: 0.9375rem;
+    color: #ff5252;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 0.625rem;
+    line-height: 1.8;
+}
+
+.tiempo {
+    background-color: #1a1a1a;
+    padding: 0.9375rem;
+    border-left: 0.25rem solid #d32f2f;
+    margin-top: 0.9375rem;
+}   
+
+.Expectativas {
+    background-color: #1a1a1a;
+    padding: 0.9375rem;
+    border-left: 0.25rem solid #d32f2f;
+    margin-top: 0.9375rem;
+}
+
+.tiempo h3 {
+    font-size: 2em;
+    margin-bottom: 0.625rem;
+}
+
+.juego-card {
+    background-color: #1a1a1a;
+    border: 0.125rem solid #d32f2f;
+    padding: 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+
+.juego-card img {
+    height: 37.5rem;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.625rem;
+    object-fit: contain;
+}
+
+.juego-card h3 {
+    font-size: 2.2em;
+    margin-bottom: 0.625rem;
+    color: #ff5252;
+}
+
+.juego-card p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.navegacion {
+    text-align: center;
+    padding: 1.875rem;
+    margin-top: 1.875rem;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.9375rem 1.875rem;
+    margin: 0.625rem;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 0.125rem solid #b71c1c;
+}
+
+.boton:hover {
+    background-color: #b71c1c;
+}
+
+section img {
+    max-width: 25rem;
+    height: auto;
+    display: block;
+    margin: 1.25rem auto;
+}
+
+.habilidades-list {
+    margin-top: 1.25rem;
+}
+
+.habilidad-item {
+    background-color: #1a1a1a;
+    padding: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    border-left: 0.1875rem solid #ff5252;
+}
+
+.habilidad-item h3 {
+    color: #ff5252;
+    font-size: 1.6em;
+    margin-bottom: 0.5rem;
+}
+
+.habilidad-item p {
+    color: #e0e0e0;
+}
+
+.metas-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.metas-list li {
+    background-color: #1a1a1a;
+    padding: 0.75rem 0.9375rem;
+    margin-bottom: 0.625rem;
+    border-left: 0.1875rem solid #d32f2f;
+    font-size: 1.1em;
+}
+
+.metas-list li:before {
+    content: "✓ ";
+    color: #ff5252;
+    font-weight: bold;
+    margin-right: 0.625rem;
+}
+
+@media (max-width: 48rem) {
+    body {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .juego-card img {
+        height: 20rem;
+    }
+}
+
+
