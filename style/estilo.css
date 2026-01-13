@@ -167,28 +167,12 @@ section img {
 }
 
 .metas-list li:before {
-    content: "✓ ";
+    content: "✓";
     color: #ff5252;
     font-weight: bold;
     margin-right: 0.625rem;
 }
 
-@media (max-width: 48rem) {
-    body {
-        font-size: 1rem;
-    }
 
-    header h1 {
-        font-size: 2em;
-    }
-
-    section h2 {
-        font-size: 1.8em;
-    }
-
-    .juego-card img {
-        height: 20rem;
-    }
-}
 
 
