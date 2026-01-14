@@ -6,81 +6,103 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 1.375rem;
     line-height: 1.8;
-    color: #e0e0e0;
-    background-color: #1a1a1a;
+    color: #333;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #2c2c2c;
+    background-color: white;
     padding: 1.25rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    background-color: #c62828;
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
     color: white;
     padding: 1.875rem 1.25rem;
     text-align: center;
     margin-bottom: 1.875rem;
-    border-bottom: 0.1875rem solid #b71c1c;
+    border-bottom: 4px solid #C9A35E;
+    box-shadow: 0 4px 10px rgba(27, 58, 107, 0.3);
 }
 
 header h1 {
     font-size: 3.5rem;
     margin-bottom: 0.625rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
     font-size: 1.8em;
-    color: #ffcdd2;
+    color: #C9A35E;
+    font-weight: 500;
 }
 
 section {
     margin-bottom: 1.875rem;
     padding: 1.25rem;
-    border-left: 0.25rem solid #d32f2f;
+    border-left: 0.25rem solid #C9A35E;
+    background-color: #fafafa;
+    border-radius: 5px;
 }
 
 section h2 {
     font-size: 2.8em;
     margin-bottom: 0.9375rem;
-    color: #ff5252;
+    color: #1B3A6B;
+    font-weight: 600;
 }
 
 section p {
     font-size: 1.1em;
     margin-bottom: 0.625rem;
     line-height: 1.8;
+    color: #555;
 }
 
 .tiempo {
-    background-color: #1a1a1a;
+    background-color: white;
     padding: 0.9375rem;
-    border-left: 0.25rem solid #d32f2f;
+    border-left: 0.25rem solid #C9A35E;
     margin-top: 0.9375rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }   
 
 .Expectativas {
-    background-color: #1a1a1a;
+    background-color: white;
     padding: 0.9375rem;
-    border-left: 0.25rem solid #d32f2f;
+    border-left: 0.25rem solid #E86A33;
     margin-top: 0.9375rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .tiempo h3 {
     font-size: 2em;
     margin-bottom: 0.625rem;
+    color: #1B3A6B;
 }
 
 .juego-card {
-    background-color: #1a1a1a;
-    border: 0.125rem solid #d32f2f;
+    background-color: white;
+    border: 0.125rem solid #C9A35E;
     padding: 0.9375rem;
     margin-bottom: 0.9375rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(27, 58, 107, 0.1);
+    transition: all 0.3s ease;
+}
+
+.juego-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(27, 58, 107, 0.2);
+    border-color: #E86A33;
 }
 
 .juego-card img {
@@ -96,33 +118,42 @@ section p {
 .juego-card h3 {
     font-size: 2.2em;
     margin-bottom: 0.625rem;
-    color: #ff5252;
+    color: #1B3A6B;
+    font-weight: 600;
 }
 
 .juego-card p {
     font-size: 1.1em;
-    color: #e0e0e0;
+    color: #555;
 }
 
 .navegacion {
     text-align: center;
     padding: 1.875rem;
     margin-top: 1.875rem;
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
+    border-radius: 8px;
 }
 
 .boton {
     display: inline-block;
-    background-color: #d32f2f;
+    background: linear-gradient(135deg, #E86A33, #d65a28);
     color: white;
     padding: 0.9375rem 1.875rem;
     margin: 0.625rem;
     text-decoration: none;
     font-size: 1.2em;
-    border: 0.125rem solid #b71c1c;
+    border: 0.125rem solid #E86A33;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(232, 106, 51, 0.3);
 }
 
 .boton:hover {
-    background-color: #b71c1c;
+    background: linear-gradient(135deg, #d65a28, #c24d1f);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(232, 106, 51, 0.4);
 }
 
 section img {
@@ -130,6 +161,8 @@ section img {
     height: auto;
     display: block;
     margin: 1.25rem auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .habilidades-list {
@@ -137,20 +170,23 @@ section img {
 }
 
 .habilidad-item {
-    background-color: #1a1a1a;
+    background-color: white;
     padding: 0.9375rem;
     margin-bottom: 0.9375rem;
-    border-left: 0.1875rem solid #ff5252;
+    border-left: 0.1875rem solid #C9A35E;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .habilidad-item h3 {
-    color: #ff5252;
+    color: #1B3A6B;
     font-size: 1.6em;
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .habilidad-item p {
-    color: #e0e0e0;
+    color: #555;
 }
 
 .metas-list {
@@ -159,16 +195,24 @@ section img {
 }
 
 .metas-list li {
-    background-color: #1a1a1a;
+    background-color: white;
     padding: 0.75rem 0.9375rem;
     margin-bottom: 0.625rem;
-    border-left: 0.1875rem solid #d32f2f;
+    border-left: 0.1875rem solid #E86A33;
     font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.metas-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 8px rgba(27, 58, 107, 0.1);
 }
 
 .metas-list li:before {
     content: "✓";
-    color: #ff5252;
+    color: #C9A35E;
     font-weight: bold;
     margin-right: 0.625rem;
 }
