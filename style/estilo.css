@@ -1,0 +1,417 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 0 1.875rem rgba(27, 58, 107, 0.1);
+}
+
+header {
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
+    color: white;
+    padding: 2rem 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+    border-bottom: 0.25rem solid #C9A35E;
+    box-shadow: 0 0.25rem 0.9375rem rgba(27, 58, 107, 0.2);
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header .header-text {
+    flex: 1;
+    text-align: center;
+}
+
+header .logo-kinal {
+    height: 3.125rem;
+    width: auto;
+    margin-left: 1.25rem;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+}
+
+header .logo-kinal:hover {
+    opacity: 1;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.0625rem;
+}
+
+.subtitle {
+    font-size: 1.4em;
+    color: #C9A35E;
+    font-weight: 300;
+    letter-spacing: 0.03125rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    border-left: 0.3125rem solid #C9A35E;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.25rem 1.25rem rgba(27, 58, 107, 0.15);
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+    color: #1B3A6B;
+    border-bottom: 0.125rem solid #C9A35E;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.05em;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #34495e;
+}
+
+.tiempo {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem;
+    border-left: 0.3125rem solid #ec9f48;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+}   
+
+.Expectativas {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem;
+    border-left: 0.3125rem solid #ec9f48;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+}
+
+.tiempo h3, .Expectativas h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.8rem;
+    color: #1B3A6B;
+}
+
+.juego-card {
+    background: white;
+    border: 0.125rem solid #e0e6ed;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.juego-card:hover {
+    border-color: #C9A35E;
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1.5625rem rgba(27, 58, 107, 0.15);
+}
+
+.juego-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.juego-card h3 {
+    font-size: 1.9em;
+    margin-bottom: 0.8rem;
+    color: #1B3A6B;
+    font-weight: 600;
+}
+
+.juego-card p {
+    font-size: 1.05em;
+    color: #34495e;
+    line-height: 1.7;
+}
+
+.navegacion {
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 0.5rem;
+}
+
+.boton {
+    display: inline-block;
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1em;
+    border: 0.125rem solid #C9A35E;
+    border-radius: 3.125rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.03125rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(27, 58, 107, 0.2);
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #C9A35E 0%, #d4ae6e 100%);
+    color: #1B3A6B;
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.375rem 1.25rem rgba(201, 163, 94, 0.3);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.habilidades-list {
+    margin-top: 1.5rem;
+}
+
+.habilidad-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 0.25rem solid #C9A35E;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.habilidad-item:hover {
+    transform: translateX(0.3125rem);
+    box-shadow: 0 0.25rem 0.9375rem rgba(27, 58, 107, 0.15);
+}
+
+.habilidad-item h3 {
+    color: #1B3A6B;
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.habilidad-item p {
+    color: #34495e;
+}
+
+.metas-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.metas-list li {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.8rem;
+    border-left: 0.25rem solid #ec9f48;
+    font-size: 1.05em;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+}
+
+.metas-list li:hover {
+    transform: translateX(0.3125rem);
+    box-shadow: 0 0.25rem 0.75rem rgba(27, 58, 107, 0.15);
+    border-left-color: #C9A35E;
+}
+
+.metas-list li:before {
+    content: "✓";
+    color: #C9A35E;
+    font-weight: bold;
+    margin-right: 0.8rem;
+    font-size: 1.3em;
+}
+
+.conclusion {
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
+    color: white;
+    border-left: 0.3125rem solid #C9A35E;
+}
+
+.conclusion h2 {
+    color: #C9A35E;
+    border-bottom-color: white;
+}
+
+.conclusion p {
+    color: #e8ecf1;
+}
+
+/* Skip Link para accesibilidad */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1B3A6B;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Footer Global */
+footer {
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    border-top: 0.3125rem solid #C9A35E;
+}
+
+.footer-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #C9A35E;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #e8ecf1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.footer-section a:hover {
+    color: #C9A35E;
+    padding-left: 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 0.125rem solid rgba(201, 163, 94, 0.3);
+    font-size: 0.9rem;
+    color: #c0c8d8;
+}
+
+/* Mejoras de accesibilidad */
+body {
+    scroll-behavior: smooth;
+}
+
+a:focus, button:focus {
+    outline: 0.2rem solid #C9A35E;
+    outline-offset: 0.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header .logo-kinal {
+        margin: 1rem 0 0 0;
+        height: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1em;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    section h2 {
+        font-size: 1.8em;
+    }
+    
+    .juego-card {
+        padding: 1rem;
+    }
+    
+    .boton {
+        display: block;
+        margin: 0.5rem auto;
+        max-width: 15.625rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    body {
+        font-size: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    header .logo-kinal {
+        height: 2.1875rem;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
