@@ -278,6 +278,83 @@ section img {
     color: #e8ecf1;
 }
 
+/* Skip Link para accesibilidad */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1B3A6B;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Footer Global */
+footer {
+    background: linear-gradient(135deg, #1B3A6B 0%, #2d4f7a 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    border-top: 0.3125rem solid #C9A35E;
+}
+
+.footer-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #C9A35E;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #e8ecf1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.footer-section a:hover {
+    color: #C9A35E;
+    padding-left: 0.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 0.125rem solid rgba(201, 163, 94, 0.3);
+    font-size: 0.9rem;
+    color: #c0c8d8;
+}
+
+/* Mejoras de accesibilidad */
+body {
+    scroll-behavior: smooth;
+}
+
+a:focus, button:focus {
+    outline: 0.2rem solid #C9A35E;
+    outline-offset: 0.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 48rem) {
     header h1 {
